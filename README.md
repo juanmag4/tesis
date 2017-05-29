@@ -1,29 +1,17 @@
-# README #
+# Competencia de Programación
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Instalación y entorno
 
-### What is this repository for? ###
+### Usando meteor en Windows
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Para usar meteor desde el shell que viene con Git (MINGW64) hay que tener en cuenta que el instalador de meteor agrega un archivo meteor.bat al PATH pero sólo se ejecuta en el SHELL que viene por defecto con Windows (CMD).
 
-### How do I get set up? ###
+Para ejecutar el comando en el Git shell lo que hay que ejecutar es `$ cmd //c meteor.bat`
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines ###
+Lo mejor sería crear un archivo script llamado `meteor` y meterlo en el mismo directorio en donde está meteor.bat con el siguiente contenido:
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+```sh
+#!/bin/sh
+cmd //c "$0.bat" "$@"
+```
