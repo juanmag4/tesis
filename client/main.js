@@ -1,14 +1,12 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import { Tracker } from 'meteor/tracker';
 
-import App from './../imports/ui/App';
+import { routes } from '../imports/routes/routes';
 
 Meteor.startup(() => {
   Tracker.autorun(() => {
-    const title = 'Competencia';
-    ReactDOM.render(<App title={title} />, document.getElementById('app'));
+    ReactDOM.render(routes, document.getElementById('app'));
   });
 });
 
