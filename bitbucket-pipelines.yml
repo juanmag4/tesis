@@ -18,6 +18,7 @@ pipelines:
           - ./meteor_install_script.sh
           - export PATH=$PATH:~/.meteor/
           - meteor --version
+          - ls
             #- cd app
             #- meteor npm test
           - bash compile.sh
