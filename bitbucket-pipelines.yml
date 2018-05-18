@@ -12,5 +12,13 @@ pipelines:
         caches:
           - node
         script: # Modify the commands below to build your repository.
+          - curl -o meteor_install_script.sh https://install.meteor.com/
+          - chmod +x meteor_install_script.sh
+          - sed -i "s/type sudo &gt;\/dev\/null 2&gt;&amp;1/\ false /g" meteor_install_script.sh
+          - ./meteor_install_script.sh
+          - export PATH=$PATH:~/.meteor/
+          - meteor --version
+          - cd app
+          - meteor npm test
           - bash compile.sh
           - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git HEAD
