@@ -1,0 +1,20 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+<<<<<<< HEAD
+const NotFound = () => (
+=======
+export default () => (
+>>>>>>> 6d0c2464bc4c1a855cc03db4e9b6dc4ad8b6032d
+  <div>
+    <h1>404 - No se encuentra la página</h1>
+    <Link to="/">Regresar al Dashboard</Link>
+  </div>
+);
+<<<<<<< HEAD
+
+export default NotFound;
+
+=======
+>>>>>>> 6d0c2464bc4c1a855cc03db4e9b6dc4ad8b6032d

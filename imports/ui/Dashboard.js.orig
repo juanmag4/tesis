@@ -1,0 +1,16 @@
+import React from 'react';
+
+<<<<<<< HEAD
+const Dashboard = () => (
+=======
+export default () => (
+>>>>>>> 6d0c2464bc4c1a855cc03db4e9b6dc4ad8b6032d
+  <div>
+    <h1>Dashboard</h1>
+  </div>
+);
+
+<<<<<<< HEAD
+export default Dashboard;
+=======
+>>>>>>> 6d0c2464bc4c1a855cc03db4e9b6dc4ad8b6032d
