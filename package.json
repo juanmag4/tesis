@@ -27,7 +27,9 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.8.2"
+    "eslint-plugin-react": "^7.8.2",
+    "postcss-bem-linter": "^3.1.0",
+    "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "engines": {
     "node": "8.1.3"
