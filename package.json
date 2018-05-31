@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.42",
+    "@material-ui/core": "^1.1.0",
     "babel-eslint": "^8.2.3",
     "bcrypt": "^2.0.1",
     "eslint-import-resolver-meteor": "^0.4.0",
@@ -20,6 +21,7 @@
     "react-modal": "^3.4.4",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "semantic-ui-react": "^0.80.2",
     "simpl-schema": "^1.5.0"
   },
   "devDependencies": {
