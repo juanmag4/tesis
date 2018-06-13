@@ -1,4 +1,45 @@
 /* CSS declarations go here */
-.body {
-    color: aliceblue;
+body {
+    background-color: #cecece!important;
 }
+
+.topbar {
+    
+    background-image: linear-gradient(-180deg, #67cdfe 15%, #03abfc 100%);
+    min-height: 70px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.logo{
+	height: 66px;
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+    color: #6f6f6f!important;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: "museo-sans-rounded",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15pt;
+ }
+
+ a{
+ 	color: #6f6f6f!important;
+ }
+
+ .panelPrincipal{
+ 	background-color: white;
+ 	padding: 40px!important;
+    border-radius: 20px;
+ }
+
+ .contenedorBotonesMenu{
+ 	float: right;
+    min-height: 60px;
+ }

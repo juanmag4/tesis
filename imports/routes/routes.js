@@ -17,28 +17,40 @@ import NotFound from '../ui/NotFound';
 import Dashboard from '../ui/Dashboard';
 import About from '../ui/About';
 import Landing from '../ui/Landing';
+import Topbar from '../ui/Topbar';
+import Nivel from '../ui/Nivel';
 
 const Routes = () => (
   <BrowserRouter>
     <div>
-      <App />
-      <AuthButton />
-      <ul>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/about" component={About} />
-        <PrivateRoute path="/dashboard" component={Dashboard} />
-        <Route component={NotFound} />
-      </Switch>
+      <Topbar />
+      <div className="container">
+        <div className="row">
+
+        <div className="col s12 m8 panelPrincipal">
+
+            <App />
+            <AuthButton />
+            
+            <Switch>
+              <Route exact path="/" component={Landing} />
+              <Route path="/login" component={Login} />
+              <Route path="/signup" component={Signup} />
+              <Route path="/about" component={About} />
+              <PrivateRoute path="/dashboard" component={Dashboard} />
+              <Route component={NotFound} />
+            </Switch>
+
+          </div>
+          <div className="col s0 m1">
+          </div>
+          <div className="col s0 m3 panelPrincipal">
+            <Nivel />
+          </div>
+          
+        </div>
+        
+      </div>
     </div>
   </BrowserRouter>
 );
