@@ -7,14 +7,14 @@ import {
 } from 'react-router-dom';
 
 const Nivel = () => (
-   <ul>
-   		<li>
-   			<Link to="/dashboard">Dashboard</Link>
-   		</li>
-   		<li>
-   			<Link to="/about">About</Link>
-   		</li>
-   	</ul>
+   <div className="pading25">
+	   	<span className="pading20">
+			<Link to="/dashboard" className="a">Menu</Link>
+		</span>
+		<span className="pading20">
+			<Link to="/about" className="a">Conocenos</Link>
+		</span>
+   	</div>
 );
 
 export default Nivel;
