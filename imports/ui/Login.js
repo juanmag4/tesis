@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
+import Button from '@material-ui/core/Button';
 
 export default class Login extends React.Component {
   constructor(props) {
@@ -42,9 +43,19 @@ export default class Login extends React.Component {
         {this.state.error ? <p>{this.state.error}</p> : undefined}
 
         <form onSubmit={this.onSubmit} noValidate>
-          <input type="email" ref={this.emailRef} name="email" placeholder="Email" />
-          <input type="password" ref={this.passwordRef} name="password" placeholder="Contraseña" />
-          <button>Entrar</button>
+          <div className="ui input focus" >
+            <input type="email" ref={this.emailRef} name="email" placeholder="Email"/>
+          </div>   
+          <div className="ui input focus" >
+            <input type="password" ref={this.passwordRef} name="password" placeholder="Contraseña" />
+          </div>   
+          <Button
+            variant="raised"
+            color="primary"
+            type="submit"
+          >
+            Ingresar
+          </Button>
         </form>
 
         <Link to="/signup">¿Necesitás una cuenta?</Link>

@@ -1,4 +1,75 @@
 /* CSS declarations go here */
-.body {
-    color: aliceblue;
+body {
+    background-color: #cecece!important;
+}
+
+.topbar {
+    
+    background-image: linear-gradient(-180deg, #67cdfe 15%, #03abfc 100%);
+    min-height: 70px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.logo{
+	height: 66px;
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+    color: #6f6f6f!important;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: "museo-sans-rounded",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15pt;
+ }
+
+ .a{
+     color: #fff!important;
+     font-size: 15pt;
+ }
+
+ .panelPrincipal{
+ 	background-color: white;
+ 	padding: 40px!important;
+    border-radius: 20px;
+    min-height: 180px;
+ }
+
+.alignRigth{
+    text-align: right;
+}
+
+.pading25{
+    padding: 25px;
+}
+.marginBot25{
+    margin-bottom: 25px;
+}
+
+.pading20{
+    padding: 20px;
+}
+
+.contenidoCentrado{
+    text-align: center;
+}
+
+.cuadroInterno{
+    width: 80%;
+}
+
+.cuadroCentrado{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elementoCentrado{
+    float: center;
+    max-width: max-content;
 }
