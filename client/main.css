@@ -1,6 +1,14 @@
+@import url('/fonts/museo-sans-rounded-webfont/font.css');
+
 /* CSS declarations go here */
 body {
-    background-color: #cecece!important;
+    background-color: #e9e9e9!important;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p, div, span{
+    font-family: 'MuseoSansRounded'!important;
+    font-weight: 100;
 }
 
 .topbar {
@@ -37,7 +45,7 @@ li {
  .panelPrincipal{
  	background-color: white;
  	padding: 40px!important;
-    border-radius: 20px;
+    border-radius: 10px;
     min-height: 180px;
  }
 
@@ -61,7 +69,8 @@ li {
 }
 
 .cuadroInterno{
-    width: 80%;
+    width: 100%;
+    max-width: 400px;
 }
 
 .cuadroCentrado{
@@ -72,4 +81,9 @@ li {
 .elementoCentrado{
     float: center;
     max-width: max-content;
+}
+
+.selectEnable:hover {
+    opacity: 0.6;
+    transition: 0.4s;
 }
