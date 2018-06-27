@@ -43,10 +43,10 @@ export default class Login extends React.Component {
         {this.state.error ? <p>{this.state.error}</p> : undefined}
 
         <form onSubmit={this.onSubmit} noValidate>
-          <div class="ui input focus" >
+          <div className="ui input focus" >
             <input type="email" ref={this.emailRef} name="email" placeholder="Email"/>
           </div>   
-          <div class="ui input focus" >
+          <div className="ui input focus" >
             <input type="password" ref={this.passwordRef} name="password" placeholder="Contraseña" />
           </div>   
           <Button
