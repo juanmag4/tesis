@@ -53,6 +53,10 @@ li {
     text-align: right;
 }
 
+.alignLeft{
+    text-align: left;
+}
+
 .pading25{
     padding: 25px;
 }

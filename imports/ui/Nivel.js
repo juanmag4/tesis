@@ -14,6 +14,9 @@ const Nivel = () => (
 		<span className="pading20">
 			<Link to="/about" className="a">Conocenos</Link>
 		</span>
+		<span className="pading20">
+			<Link to="/inscripcion" className="a">Inscribir Participante</Link>
+		</span>
    	</div>
 );
 

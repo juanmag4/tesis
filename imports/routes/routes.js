@@ -20,6 +20,7 @@ import Landing from '../ui/Landing';
 import Topbar from '../ui/Topbar';
 import Experience from '../ui/Experience';
 import Victorias from '../ui/Victorias';
+import InscripcionParticipante from '../ui/InscripcionParticipante'
 
 const Routes = () => (
   <BrowserRouter>
@@ -35,6 +36,7 @@ const Routes = () => (
               <Route path="/login" component={Login} />
               <Route path="/signup" component={Signup} />
               <Route path="/about" component={About} />
+              <Route path="/inscripcion" component={InscripcionParticipante} />
               <PrivateRoute path="/dashboard" component={Dashboard} />
               <Route component={NotFound} />
             </Switch>
